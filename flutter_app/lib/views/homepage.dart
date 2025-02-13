@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_app/views/components/hero_top_image.dart';
 import 'package:flutter_app/views/components/hero_top_text.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_app/views/projectsPublic.dart';
 import 'package:flutter_app/views/eventsPublic.dart';
 import 'package:flutter_app/views/aboutUs.dart';
@@ -53,27 +52,21 @@ class _HomepageState extends State<Homepage> {
                 icon: const Icon(Icons.home_outlined),
                 selectedIcon: const Icon(Icons.home),
                 label: Text('Home',
-                    style: GoogleFonts.robotoMono(
-                        textStyle:
-                            const TextStyle(fontWeight: FontWeight.w400))),
+                    style: TextStyle(fontFamily: 'Google Sans', fontWeight: FontWeight.w500, color: Color.fromARGB(255, 43, 43, 43))),
               ),
               NavigationRailDestination(
                 padding: EdgeInsets.only(left: 10, right: 10, top: 10),
                 icon: const Icon(Icons.description_outlined),
                 selectedIcon: const Icon(Icons.description),
                 label: Text('Projects',
-                    style: GoogleFonts.robotoMono(
-                        textStyle:
-                            const TextStyle(fontWeight: FontWeight.w400))),
+                    style: TextStyle(fontFamily: 'Google Sans', fontWeight: FontWeight.w500, color: Color(0xFF2B2B2B))),
               ),
               NavigationRailDestination(
                 padding: EdgeInsets.only(left: 10, right: 10, top: 10),
                 icon: const Icon(Icons.event_outlined),
                 selectedIcon: const Icon(Icons.event),
                 label: Text('Events',
-                    style: GoogleFonts.robotoMono(
-                        textStyle:
-                            const TextStyle(fontWeight: FontWeight.w400))),
+                    style: TextStyle(fontFamily: 'Google Sans', fontWeight: FontWeight.w500, color: Color(0xFF2B2B2B))),
               ),
 
               NavigationRailDestination(
@@ -81,9 +74,7 @@ class _HomepageState extends State<Homepage> {
                 icon: const Icon(Icons.groups_outlined),
                 selectedIcon: const Icon(Icons.groups),
                 label: Text('About Us',
-                    style: GoogleFonts.robotoMono(
-                        textStyle:
-                            const TextStyle(fontWeight: FontWeight.w400))),
+                    style: TextStyle(fontFamily: 'Google Sans', fontWeight: FontWeight.w500, color: Color(0xFF2B2B2B))),
               ),
               // Add more destinations as needed
             ],
