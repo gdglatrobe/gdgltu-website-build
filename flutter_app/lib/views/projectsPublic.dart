@@ -6,6 +6,8 @@ import 'components/projectsPublic_right.dart';
 const appcolors = AppColors();
 
 class Projectspublic extends StatelessWidget {
+  const Projectspublic({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

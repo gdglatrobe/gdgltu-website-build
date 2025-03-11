@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 const appcolors = AppColors();
 
 class ProjectspublicRight extends StatelessWidget {
+  const ProjectspublicRight({super.key});
+
   @override
   Widget build(BuildContext context){
 

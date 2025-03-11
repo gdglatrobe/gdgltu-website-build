@@ -6,6 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 const appcolors = AppColors();
 
 class JoinUs extends StatefulWidget {
+  const JoinUs({super.key});
+
   @override
   _JoinUsState createState() => _JoinUsState();
 }
@@ -16,6 +18,7 @@ class _JoinUsState extends State<JoinUs> with SingleTickerProviderStateMixin {
   late Animation _animation2;
   late Animation _curve2;
 
+  @override
   void initState() {
     _animationController2 = AnimationController(
         vsync: this, duration: const Duration(milliseconds: 400));
@@ -39,7 +42,7 @@ class _JoinUsState extends State<JoinUs> with SingleTickerProviderStateMixin {
         borderRadius: BorderRadius.circular(50),
       ),
       clipBehavior: Clip.hardEdge,
-      constraints: BoxConstraints(
+      constraints: const BoxConstraints(
         maxWidth: 150,
         maxHeight: 50,
       ),
@@ -57,7 +60,7 @@ class _JoinUsState extends State<JoinUs> with SingleTickerProviderStateMixin {
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   colors: [
                     Color(0xFF222222),
                     Color(0xFF222222),
@@ -80,7 +83,7 @@ class _JoinUsState extends State<JoinUs> with SingleTickerProviderStateMixin {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
                 border: Border.all(
-                    color: Color(0xFF1A1A1A),
+                    color: const Color(0xFF1A1A1A),
                     width: 3,
                     style: BorderStyle.solid,
                     strokeAlign: BorderSide.strokeAlignInside),
@@ -91,7 +94,7 @@ class _JoinUsState extends State<JoinUs> with SingleTickerProviderStateMixin {
                 child: Text(
                   'Join Us',
                   style: GoogleFonts.robotoMono(
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       color: Color(0xFF1A1A1A),
                       fontSize: 20,
                       fontWeight: FontWeight.w500,

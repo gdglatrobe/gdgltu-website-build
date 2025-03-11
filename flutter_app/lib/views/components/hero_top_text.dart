@@ -12,6 +12,8 @@ import 'package:flutter_animated_button/flutter_animated_button.dart';
 const appcolors = AppColors();
 
 class TopHero extends StatefulWidget {
+  const TopHero({super.key});
+
   @override
   TopHeroTxt createState() => TopHeroTxt();
 }
@@ -30,7 +32,7 @@ class TopHeroTxt extends State<TopHero> with SingleTickerProviderStateMixin {
       ? await launchUrl(httpsUrL)
       : throw 'Could not launch';
 
-  var _instUrl = Uri(
+  final _instUrl = Uri(
     scheme: 'https',
     host: 'instagram.com',
     path: 'gdglatrobe',
@@ -40,7 +42,7 @@ class TopHeroTxt extends State<TopHero> with SingleTickerProviderStateMixin {
       ? await launchUrl(_instUrl)
       : throw 'Could not launch';
 
-  var _linkInUrl = Uri(
+  final _linkInUrl = Uri(
     scheme: 'https',
     host: 'linkedin.com',
     path: 'company/gdglatrobe',
@@ -50,7 +52,7 @@ class TopHeroTxt extends State<TopHero> with SingleTickerProviderStateMixin {
       ? await launchUrl(_linkInUrl)
       : throw 'Could not launch';
 
-  var _discordUrl = Uri(
+  final _discordUrl = Uri(
     scheme: 'https',
     host: 'discord.gg',
     path: '4HX7Ubk983',
@@ -60,7 +62,7 @@ class TopHeroTxt extends State<TopHero> with SingleTickerProviderStateMixin {
       ? await launchUrl(_discordUrl)
       : throw 'Could not launch';
 
-  var _emailLinkUrl = Uri(
+  final _emailLinkUrl = Uri(
     scheme: 'mailto',
     path: 'gdsclatrobe@gmail.com',
   );
@@ -223,14 +225,14 @@ class TopHeroTxt extends State<TopHero> with SingleTickerProviderStateMixin {
                     fontSize: 20,
                   ),
                 ),
-                selectedTextColor: Color(0xFFFAFAFA),
+                selectedTextColor: const Color(0xFFFAFAFA),
                 onPress: _launchUrl,
                 animatedOn: AnimatedOn.onHover,
                 transitionType: TransitionType.LEFT_TO_RIGHT,
                 borderRadius: 50,
                 backgroundColor: const Color(0xFFFAFAFA),
                 selectedBackgroundColor: const Color(0xFF222222),
-                borderColor: Color(0xFF222222),
+                borderColor: const Color(0xFF222222),
                 borderWidth: 2,
               )),
           const SizedBox(
@@ -240,7 +242,7 @@ class TopHeroTxt extends State<TopHero> with SingleTickerProviderStateMixin {
             children: [
               IconButton(
                   onPressed: _launchUrlInsta,
-                  hoverColor: Color(0xFFE8DEF8),
+                  hoverColor: const Color(0xFFE8DEF8),
                   iconSize: 24,
                   icon: const Icon(
                       size: 24, MdiIcons.instagram, color: Color(0xFF1A1A1A))),
@@ -248,20 +250,20 @@ class TopHeroTxt extends State<TopHero> with SingleTickerProviderStateMixin {
               IconButton(
                   iconSize: 24,
                   onPressed: _launchUrlLinkIn,
-                  hoverColor: Color(0xFFE8DEF8),
+                  hoverColor: const Color(0xFFE8DEF8),
                   icon: const Icon(
                       size: 24, MdiIcons.linkedin, color: Color(0xFF1A1A1A))),
               const SizedBox(width: 10),
               IconButton(
                   onPressed: _launchUrlDiscIn,
-                  hoverColor: Color(0xFFE8DEF8),
+                  hoverColor: const Color(0xFFE8DEF8),
                   icon: const FaIcon(
                     size: 24,
                     FontAwesomeIcons.discord,
                     color: Color(0xFF1A1A1A),
                   )),
                   const SizedBox(width: 10,),
-              IconButton(onPressed: _launchUrlEmail, hoverColor: Color(0xFFE8DEF8), icon: Icon(Icons.mail_outline, color:Color(0xFF1A1A1A), size: 24,))
+              IconButton(onPressed: _launchUrlEmail, hoverColor: const Color(0xFFE8DEF8), icon: const Icon(Icons.mail_outline, color:Color(0xFF1A1A1A), size: 24,))
             ],
           )
         ],

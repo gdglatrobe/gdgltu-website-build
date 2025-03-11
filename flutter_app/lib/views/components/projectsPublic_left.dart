@@ -6,6 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 const appcolors = AppColors();
 
 class ProjectspublicLeft extends StatelessWidget {
+  const ProjectspublicLeft({super.key});
+
   
   @override
   Widget build(BuildContext context) {
@@ -59,13 +61,13 @@ class ProjectspublicLeft extends StatelessWidget {
                   ),
                 ),
                 onPress: () {},
-                selectedTextColor: Color(0xFFFAFAFA),
+                selectedTextColor: const Color(0xFFFAFAFA),
                 animatedOn: AnimatedOn.onHover,
                 transitionType: TransitionType.LEFT_TO_RIGHT,
                 borderRadius: 50,
                 backgroundColor: const Color(0xFFFAFAFA),
                 selectedBackgroundColor: const Color(0xFF222222),
-                borderColor: Color(0xFF222222),
+                borderColor: const Color(0xFF222222),
                 borderWidth: 2,
               ))
         ],

@@ -12,7 +12,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  var _instUrl = Uri(
+  final _instUrl = Uri(
     scheme: 'https',
     host: 'instagram.com',
     path: 'gdglatrobe',
@@ -22,7 +22,7 @@ class _HomepageState extends State<Homepage> {
       ? await launchUrl(_instUrl)
       : throw 'Could not launch';
 
-  var _linkInUrl = Uri(
+  final _linkInUrl = Uri(
     scheme: 'https',
     host: 'linkedin.com',
     path: 'company/gdglatrobe',
@@ -32,7 +32,7 @@ class _HomepageState extends State<Homepage> {
       ? await launchUrl(_linkInUrl)
       : throw 'Could not launch';
 
-  var _discordUrl = Uri(
+  final _discordUrl = Uri(
     scheme: 'https',
     host: 'discord.gg',
     path: '4HX7Ubk983',
@@ -42,7 +42,7 @@ class _HomepageState extends State<Homepage> {
       ? await launchUrl(_discordUrl)
       : throw 'Could not launch';
 
-  var _emailLinkUrl = Uri(
+  final _emailLinkUrl = Uri(
     scheme: 'mailto',
     path: 'gdsclatrobe@gmail.com',
   );
